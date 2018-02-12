@@ -65,15 +65,3 @@ class paperParser():
 				finalSet.add(j)
 		print(len(finalSet))
 		return finalSet
-
-		
-
-
-if __name__ == '__main__':
-	pp = paperParser();
-	pp.parse_paper("../data/example_paper.tex")
-
-
-
-
-
