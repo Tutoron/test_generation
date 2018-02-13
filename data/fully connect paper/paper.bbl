@@ -1,0 +1,215 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Bahdanau \bgroup et al.\egroup }2015]{Bahdanau:15}
+Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio.
+\newblock 2015.
+\newblock Neural machine translation by jointly learning to align and
+  translate.
+\newblock In {\em Proceedings of the International Conference on Learning
+  Representations (ICLR)}.
+
+\bibitem[\protect\citename{Callison-Burch}2009]{Callison-Burch:09}
+Chris Callison-Burch.
+\newblock 2009.
+\newblock Fast, cheap, and creative: Evaluating translation quality using
+  amazon's mechanical turk.
+\newblock In {\em Proceedings of the 2009 Conference on Empirical Methods in
+  Natural Language Processing}.
+
+\bibitem[\protect\citename{Cho \bgroup et al.\egroup }2014a]{Cho:14a}
+Kyunghyun Cho, Bart van Merri\"enboer, Dzmitry Bahdanau, and Yoshua Bengio.
+\newblock 2014a.
+\newblock On the properties of neural machine translation: Encoder-decoder
+  approaches.
+\newblock In {\em Proceedings of the 8th Workshop on Syntax, Semantics, and
+  Structure in Statistical Translation}, page 103.
+
+\bibitem[\protect\citename{Cho \bgroup et al.\egroup }2014b]{Cho:14b}
+Kyunghyun Cho, Bart van Merri\"enboer, Caglar Gulcehre, Fethi Bougares, Holger
+  Schwenk, and Yoshua Bengio.
+\newblock 2014b.
+\newblock Learning phrase representations using {RNN} encoder-decoder for
+  statistical machine translation.
+\newblock In {\em Proceedings of the Empiricial Methods in Natural Language
+  Processing}.
+
+\bibitem[\protect\citename{Chung \bgroup et al.\egroup }2016]{Chung:16}
+Junyoung Chung, Kyunghyun Cho, and Yoshua Bengio.
+\newblock 2016.
+\newblock A character-level decoder without explicit segmentation for neural
+  machine translation.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics}.
+
+\bibitem[\protect\citename{Costa-Juss\'a and Fonollosa}2016]{Costa-jussa:16}
+Marta~R. Costa-Juss\'a and Jos\`e A.~R. Fonollosa.
+\newblock 2016.
+\newblock Character-based neural machine translation.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics}, page 357.
+
+\bibitem[\protect\citename{de Saussure}1916]{deSaussure:1916}
+Ferdinand de~Saussure.
+\newblock 1916.
+\newblock {\em Course in General Linguistics}.
+
+\bibitem[\protect\citename{Firat \bgroup et al.\egroup }2016a]{Firat:16}
+Orhan Firat, Kyunghyun Cho, and Yoshua Bengio.
+\newblock 2016a.
+\newblock Multi-way, multilingual neural machine translation with a shared
+  attention mechanism.
+\newblock In {\em Proceedings of the 2016 Conference of the North American
+  Chapter of the Association for Computational Linguistics}.
+
+\bibitem[\protect\citename{Firat \bgroup et al.\egroup }2016b]{Firat:16b}
+Orhan Firat, Baskaran Sankaran, Yaser Al-Onaizan, Fatos T.~Yarman Vural, and
+  Kyunghyun Cho.
+\newblock 2016b.
+\newblock Zero-resource translation with multi-lingual neural machine
+  translation.
+
+\bibitem[\protect\citename{Gillick \bgroup et al.\egroup }2015]{Gillick:15}
+Dan Gillick, Cliff Brunk, Oriol Vinyals, and Amarnag Subramanya.
+\newblock 2015.
+\newblock Multilingual language processing from bytes.
+\newblock In {\em Proceedings of the 2016 Conference of the North American
+  Chapter of the Association for Computational Linguistics}.
+
+\bibitem[\protect\citename{Graham \bgroup et al.\egroup }2015]{Graham:15}
+Yvette Graham, Nitika Mathur, and Timothy Baldwin.
+\newblock 2015.
+\newblock Accurate evaluation of segment-level machine translation metrics.
+\newblock In {\em Proceedings of the 2015 Conference of the North American
+  Chapter of the Association for Computational Linguistics Human Language
+  Technologies}, Denver, Colorado.
+
+\bibitem[\protect\citename{Graham \bgroup et al.\egroup }2016]{Graham:16}
+Yvette Graham, Timothy Baldwin, Alistair Moffat, and Justin Zobel.
+\newblock 2016.
+\newblock Can machine translation systems be evaluated by the crowd alone.
+\newblock {\em Natural Language Engineering}, FirstView.
+
+\bibitem[\protect\citename{Hochreiter and Schmidhuber}1997]{Hochreiter:97}
+Sepp Hochreiter and J\"{u}rgen Schmidhuber.
+\newblock 1997.
+\newblock Long short-term memory.
+\newblock {\em Neural Computation}, 9(8):1735--1780.
+
+\bibitem[\protect\citename{Jackendoff}1992]{Jackendoff:90}
+Ray~S. Jackendoff.
+\newblock 1992.
+\newblock {\em Semantic Structures}, volume~18.
+\newblock MIT press.
+
+\bibitem[\protect\citename{Jean \bgroup et al.\egroup }2015]{Jean:15}
+S\'ebastien Jean, Kyunghyun Cho, Roland Memisevic, and Yoshua Bengio.
+\newblock 2015.
+\newblock On using very large target vocabulary for neural machine translation.
+\newblock In {\em Proceedings of the 53rd Annual Meeting of the Association for
+  Computational Linguistics}.
+
+\bibitem[\protect\citename{Kim \bgroup et al.\egroup }2015]{Kim:15}
+Yoon Kim, Yacine Jernite, David Sontag, and Alexander~M. Rush.
+\newblock 2015.
+\newblock Character-aware neural language models.
+\newblock In {\em Proceedings of the 30th AAAI Conference on Artificial
+  Intelligence}.
+
+\bibitem[\protect\citename{Kingma and Ba}2014]{Kingma:14}
+Diederik Kingma and Jimmy Ba.
+\newblock 2014.
+\newblock Adam: A method for stochastic optimization.
+\newblock In {\em Proceedings of the 3rd International Conference for Learning
+  Representations (ICLR)}.
+
+\bibitem[\protect\citename{Ling \bgroup et al.\egroup }2015]{Ling:15}
+Wang Ling, Isabel Trancoso, Chris Dyer, and Alan~W. Black.
+\newblock 2015.
+\newblock Character-based neural machine translation.
+\newblock {\em arXiv preprint arXiv:1511.04586}.
+
+\bibitem[\protect\citename{Luong and Manning}2016]{Luong:16}
+Minh-Thang Luong and Christopher~D. Manning.
+\newblock 2016.
+\newblock Achieving open vocabulary neural machine translation with hybrid
+  word-character models.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics}.
+
+\bibitem[\protect\citename{Luong \bgroup et al.\egroup }2015]{Luong:15}
+Minh-Thang Luong, Hieu Pham, and Christopher~D. Manning.
+\newblock 2015.
+\newblock Effective approaches to attention-based neural machine translation.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics}.
+
+\bibitem[\protect\citename{Pascanu \bgroup et al.\egroup }2013]{Pascanu:13}
+Razvan Pascanu, Tomas Mikolov, and Yoshua Bengio.
+\newblock 2013.
+\newblock On the difficulty of training recurrent neural networks.
+\newblock In {\em Proceedings of the 30th International Conference on Machine
+  Learning (ICML)}.
+
+\bibitem[\protect\citename{Sennrich \bgroup et al.\egroup }2015]{Sennrich:15}
+Rico Sennrich, Barry Haddow, and Alexandra Birch.
+\newblock 2015.
+\newblock Neural machine translation of rare words with subword units.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics}.
+
+\bibitem[\protect\citename{Sennrich \bgroup et al.\egroup }2016]{Sennrich:16}
+Rico Sennrich, Barry Haddow, and Alexandra Birch.
+\newblock 2016.
+\newblock Edinburgh neural machine translation systems for {WMT} 16.
+
+\bibitem[\protect\citename{Srivastava \bgroup et al.\egroup
+  }2015]{Srivastava:15}
+Rupesh~Kumar Srivastava, Klaus Greff, and J\"urgen Schmidhuber.
+\newblock 2015.
+\newblock Training very deep networks.
+\newblock In {\em Advances in Neural Information Processing Systems (NIPS
+  2015)}, volume~28.
+
+\bibitem[\protect\citename{Sutskever \bgroup et al.\egroup }2015]{Sutskever:14}
+Ilya Sutskever, Oriol Vinyals, and Quoc~V. Le.
+\newblock 2015.
+\newblock Sequence to sequence learning with neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems (NIPS
+  2015)}, volume~28.
+
+\bibitem[\protect\citename{Tsvetkov \bgroup et al.\egroup }2016]{Tsvetkov:16}
+Yulia Tsvetkov, Sunayana Sitaram, Manaal Faruqui, Guillaume Lample, Patrick
+  Littell, David Mortensen, Alan~W. Black, Lori Levin, and Chris Dyer.
+\newblock 2016.
+\newblock Polyglot neural language models: A case study in cross-lingual
+  phonetic representation learning.
+\newblock In {\em Proceedings of the 2016 Conference of the North American
+  Chapter of the Association for Computational Linguistics}.
+
+\bibitem[\protect\citename{Wu \bgroup et al.\egroup }2016]{Wu:16}
+Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc~V. Le, Mohammad Norouzi, Wolfgang
+  Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, Jeff Klingner,
+  Apurva Shah, Melvin Johnson, Xiaobing Liu, Lukasz Kaiser, Stephan Gouws,
+  Yoshikiyo Kato, Taku Kudo, Hideto Kazawa, Keith Stevens, George Kurian,
+  Nishant Patil, Wei Wang, Cliff Young, Jason Smith, Jason Riesa, Alex Rudnick,
+  Oriol Vinyals, Greg Corrado, Macduff Hughes, and Jeffrey Dean.
+\newblock 2016.
+\newblock Google's neural machine translation system: Bridging the gap between
+  human and machine translation.
+\newblock {\em arXiv preprint arXiv:1609.08144}.
+
+\bibitem[\protect\citename{Xiao and Cho}2016]{Xiao:16}
+Yijun Xiao and Kyunghyun Cho.
+\newblock 2016.
+\newblock Efficient character-level document classification by combining
+  convolution and recurrent layers.
+\newblock {\em arXiv preprint arXiv:1602.00367}.
+
+\bibitem[\protect\citename{Zhang \bgroup et al.\egroup }2015]{Zhang:15}
+Xiang Zhang, Junbo Zhao, and Yann LeCun.
+\newblock 2015.
+\newblock Character-level convolutional networks for text classification.
+\newblock In {\em Advances in Neural Information Processing Systems (NIPS
+  2015)}, volume~28.
+
+\end{thebibliography}
