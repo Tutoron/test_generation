@@ -3,7 +3,7 @@ This version incorporated NLTK (http://www.nltk.org/), which is a sophisticated 
 
 In order to use NLTK, you need to install NLTK at http://www.nltk.org/install.html.
 
-After that, you need to download the Punkt model. In interactice Python console, type:
+After that, you need to download the Punkt model. In interactive Python console, type:
 
 import nltk
 
