@@ -1,0 +1,15 @@
+"In particular consider the conditional log-probability of a summary given the input, EQUATION.",0.222222222,0.1,0
+"With this scoring function in mind, our main focus will be on modelling the local conditional distribution: EQUATION.",0.222222222,0.2,1
+"The distribution of interest, EQUATION, is a conditional language model based on the input sentence OBJECT.",0.333333333,0.3,0
+"The full model is: EQUATION, OBJECT, OBJECT",0.37037,0.4,1
+"The parameters are EQUATION where OBJECT is a word embedding matrix, OBJECT, OBJECT, OBJECT are weight matrices.",0.370370367,0.5,2
+"Once we have defined the local conditional model, EQUATION, we can estimate the parameters to minimize the negative log-likelihood of a set of summaries.",0.444443333,0.6,1
+"OBJECT, EQUATION, OBJECT",0.444444433,0.7,0
+"\Require{Parameters EQUATION, beam size OBJECT, input OBJECT}",0.444444444,0.8,0
+"We do this by modifying our scoring function to directly estimate the probability of a summary using a log-linear model, as is standard in machine translation: EQUATION.",0.444444444,0.9,0
+"After training the main neural model, we fix EQUATION and tune the OBJECT parameters.",0.444444444,1,1
+where EQUATION is a size of the mini-batch and OBJECT is a hyper parameter representing required estimation accuracy.,0.6,0.6,2
+"The leading term of the number of multiply-add operations in it is EQUATION, where OBJECT and EQUATION are the number of parameters and the local batch size, respectively.",0.714285714,1,2
+"By the weak law of large numbers, when EQUATION, the left hand side of Eq. OBJECT with OBJECT can be estimated as follows:",0.6,0.8,1
+"OBJECT, EQUATION, OBJECT",0.6,0.2,0
+"OBJECT, EQUATION, OBJECT",0.6,0.4,0
