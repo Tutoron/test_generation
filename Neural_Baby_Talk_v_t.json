@@ -1,0 +1,17 @@
+{
+	"doc_name": "Neural_Baby_Talk",
+	"symbol_expr": "v_{t}",
+	"sentences": [{
+		"type": "text",
+		"expr": " Let  $\\bm{v_{t}}\\in\\mathcal{R}^{d\\times 1}$  be the region feature of  ${r}_{t}$ , which is calculated based on Faster R-CNN",
+		"word_idx": 17139,
+		"sentence_idx": 196,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$\\bm{v_{t}}\\in\\mathcal{R}^{d\\times 1}$$",
+		"word_idx": 17405,
+		"sentence_idx": 206,
+		"label": "unlabeled"
+	}]
+}

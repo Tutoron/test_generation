@@ -1,0 +1,65 @@
+{
+	"doc_name": "Social_GAN",
+	"symbol_expr": "e_{i}^{t}",
+	"sentences": [{
+		"type": "text",
+		"expr": "  We first embed the location of each person using a single layer MLP to get a fixed length vector  $e_{i}^{t}$ ",
+		"word_idx": 15413,
+		"sentence_idx": 185,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$e_{i}^{t}$$",
+		"word_idx": 15653,
+		"sentence_idx": 188,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle e_{i}^{t}$",
+		"word_idx": 15662,
+		"sentence_idx": 189,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle e_{i}^{t}$$",
+		"word_idx": 15687,
+		"sentence_idx": 190,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle=LSTM(h_{ei}^{t-1},e_{i}^{t};W_{encoder})$",
+		"word_idx": 15854,
+		"sentence_idx": 195,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=LSTM(h_{ei}^{t-1},e_{i}^{t};W_{encoder})$$",
+		"word_idx": 15910,
+		"sentence_idx": 196,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle e_{i}^{t}$",
+		"word_idx": 18447,
+		"sentence_idx": 239,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle e_{i}^{t}$$",
+		"word_idx": 18472,
+		"sentence_idx": 240,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle=LSTM(\\gamma(P_{i},h_{di}^{t-1}),e_{i}^{t};W_{decoder})$",
+		"word_idx": 18776,
+		"sentence_idx": 249,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=LSTM(\\gamma(P_{i},h_{di}^{t-1}),e_{i}^{t};W_{decoder})$$",
+		"word_idx": 18846,
+		"sentence_idx": 250,
+		"label": "none"
+	}]
+}

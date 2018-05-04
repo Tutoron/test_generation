@@ -1,0 +1,467 @@
+{
+	"doc_name": "Bayesian_Gradient_Descent",
+	"symbol_expr": "epsilon",
+	"sentences": [{
+		"type": "text",
+		"expr": "$\\displaystyle=\\mu_{i}+\\varepsilon_{i}\\sigma_{i}$",
+		"word_idx": 17278,
+		"sentence_idx": 184,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=\\mu_{i}+\\varepsilon_{i}\\sigma_{i}$$",
+		"word_idx": 17327,
+		"sentence_idx": 185,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\varepsilon_{i}$",
+		"word_idx": 17374,
+		"sentence_idx": 186,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\varepsilon_{i}$$",
+		"word_idx": 17404,
+		"sentence_idx": 187,
+		"label": "definition"
+	}, {
+		"type": "text",
+		"expr": "$\\frac{\\partial}{\\partial\\phi}\\mathrm{E}_{\\theta}\\left[f\\left(\\theta,\\phi\\right%\n)\\right]=\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial f\\left(\\theta,\\phi\\right%\n)}{\\partial\\theta}\\frac{\\partial\\theta}{\\partial\\phi}+\\frac{\\partial f\\left(%\n\\theta,\\phi\\right)}{\\partial\\phi}\\right],$",
+		"word_idx": 17663,
+		"sentence_idx": 196,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\frac{\\partial}{\\partial\\phi}\\mathrm{E}_{\\theta}\\left[f\\left(\\theta,\\phi\\right%\n)\\right]=\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial f\\left(\\theta,\\phi\\right%\n)}{\\partial\\theta}\\frac{\\partial\\theta}{\\partial\\phi}+\\frac{\\partial f\\left(%\n\\theta,\\phi\\right)}{\\partial\\phi}\\right],$$",
+		"word_idx": 17944,
+		"sentence_idx": 197,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial f\\left(\\theta,\\phi\\right)}{%\n\\partial\\theta}\\frac{\\partial\\theta}{\\partial\\phi}+\\frac{\\partial f\\left(%\n\\theta,\\phi\\right)}{\\partial\\phi}\\right]=0$",
+		"word_idx": 18638,
+		"sentence_idx": 201,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial f\\left(\\theta,\\phi\\right)}{%\n\\partial\\theta}\\frac{\\partial\\theta}{\\partial\\phi}+\\frac{\\partial f\\left(%\n\\theta,\\phi\\right)}{\\partial\\phi}\\right]=0$$",
+		"word_idx": 18831,
+		"sentence_idx": 202,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\mu_{i}=m_{i}-v_{i}^{2}\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(%\n\\theta\\right)}{\\partial\\theta_{i}}\\right]$",
+		"word_idx": 19131,
+		"sentence_idx": 208,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mu_{i}=m_{i}-v_{i}^{2}\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(%\n\\theta\\right)}{\\partial\\theta_{i}}\\right]$$",
+		"word_idx": 19251,
+		"sentence_idx": 209,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\sigma_{i}=v_{i}\\sqrt{\\!1+\\!\\left(\\frac{1}{2}v_{i}E_{\\varepsilon}\\left[\\frac{%\n\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]\\right%\n)^{2}}-\\frac{1}{2}v_{i}^{2}E_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta%\n\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]$",
+		"word_idx": 19369,
+		"sentence_idx": 210,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\sigma_{i}=v_{i}\\sqrt{\\!1+\\!\\left(\\frac{1}{2}v_{i}E_{\\varepsilon}\\left[\\frac{%\n\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]\\right%\n)^{2}}-\\frac{1}{2}v_{i}^{2}E_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta%\n\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]$$",
+		"word_idx": 19658,
+		"sentence_idx": 211,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\mu_{i}\\leftarrow\\mu_{i}-\\eta\\sigma_{i}^{2}E_{%\n\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right]$",
+		"word_idx": 20885,
+		"sentence_idx": 234,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\mu_{i}\\leftarrow\\mu_{i}-\\eta\\sigma_{i}^{2}E_{%\n\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right]$$",
+		"word_idx": 21040,
+		"sentence_idx": 235,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\sigma_{i}\\leftarrow\\sigma_{i}\\sqrt{1+\\left(\\frac{1}{2%\n}\\sigma_{i}E_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial%\n\\theta_{i}}\\varepsilon_{i}\\right]\\right)^{2}}-\\frac{1}{2}\\sigma_{i}^{2}E_{%\n\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}%\n\\varepsilon_{i}\\right]$",
+		"word_idx": 21193,
+		"sentence_idx": 236,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\sigma_{i}\\leftarrow\\sigma_{i}\\sqrt{1+\\left(\\frac{1}{2%\n}\\sigma_{i}E_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial%\n\\theta_{i}}\\varepsilon_{i}\\right]\\right)^{2}}-\\frac{1}{2}\\sigma_{i}^{2}E_{%\n\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}%\n\\varepsilon_{i}\\right]$$",
+		"word_idx": 21528,
+		"sentence_idx": 237,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial%\n\\theta_{i}}\\right]\\simeq\\frac{1}{K}\\sum_{k=1}^{K}\\frac{\\partial L\\left(\\theta^%\n{(k)}\\right)}{\\partial\\theta_{i}}$",
+		"word_idx": 21978,
+		"sentence_idx": 242,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial%\n\\theta_{i}}\\right]\\simeq\\frac{1}{K}\\sum_{k=1}^{K}\\frac{\\partial L\\left(\\theta^%\n{(k)}\\right)}{\\partial\\theta_{i}}$$",
+		"word_idx": 22170,
+		"sentence_idx": 243,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial%\n\\theta_{i}}\\varepsilon_{i}\\right]\\simeq\\frac{1}{K}\\sum_{k=1}^{K}\\frac{\\partial\nL%\n\\left(\\theta^{(k)}\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}^{(k)}$",
+		"word_idx": 22360,
+		"sentence_idx": 244,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial%\n\\theta_{i}}\\varepsilon_{i}\\right]\\simeq\\frac{1}{K}\\sum_{k=1}^{K}\\frac{\\partial\nL%\n\\left(\\theta^{(k)}\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}^{(k)}$$",
+		"word_idx": 22588,
+		"sentence_idx": 245,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\theta_{i}^{(k)}=\\mu_{i}+\\varepsilon_{i}^{(k)}\\sigma_{i}$",
+		"word_idx": 22820,
+		"sentence_idx": 247,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta_{i}^{(k)}=\\mu_{i}+\\varepsilon_{i}^{(k)}\\sigma_{i}$$",
+		"word_idx": 22878,
+		"sentence_idx": 248,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "It is easy to verify that the update rule for  $\\sigma$  is a strictly monotonically decreasing\nfunction of  $E_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}%\n\\varepsilon_{i}\\right]$ ",
+		"word_idx": 23637,
+		"sentence_idx": 260,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$E_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}%\n\\varepsilon_{i}\\right]$$",
+		"word_idx": 23867,
+		"sentence_idx": 263,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)%\n}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]$",
+		"word_idx": 23968,
+		"sentence_idx": 264,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)%\n}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]$$",
+		"word_idx": 24093,
+		"sentence_idx": 265,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)%\n}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]$",
+		"word_idx": 24372,
+		"sentence_idx": 268,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)%\n}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]$$",
+		"word_idx": 24497,
+		"sentence_idx": 269,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)%\n}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]$",
+		"word_idx": 24776,
+		"sentence_idx": 272,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)%\n}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]$$",
+		"word_idx": 24901,
+		"sentence_idx": 273,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "Next, using a Taylor expansion, we show that for small values of  $\\sigma$ , the quantity  $E_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}%\n\\varepsilon_{i}\\right]$ , approximates the curvature of the loss:",
+		"word_idx": 25180,
+		"sentence_idx": 276,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$E_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}%\n\\varepsilon_{i}\\right]$$",
+		"word_idx": 25422,
+		"sentence_idx": 278,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\mathrm{E}_{\\epsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{%\n\\partial\\theta_{i}}\\epsilon_{i}\\right]=\\mathrm{E}_{\\epsilon}\\left[\\frac{%\n\\partial L\\left(\\mu+\\epsilon\\sigma\\right)}{\\partial\\theta_{i}}\\epsilon_{i}\\right]$",
+		"word_idx": 25523,
+		"sentence_idx": 279,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\mathrm{E}_{\\epsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{%\n\\partial\\theta_{i}}\\epsilon_{i}\\right]=\\mathrm{E}_{\\epsilon}\\left[\\frac{%\n\\partial L\\left(\\mu+\\epsilon\\sigma\\right)}{\\partial\\theta_{i}}\\epsilon_{i}\\right]$$",
+		"word_idx": 25759,
+		"sentence_idx": 280,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle=\\mathrm{E}_{\\epsilon}\\left[\\left(\\frac{\\partial L\\left(\\mu\\right%\n)}{\\partial\\theta_{i}}+\\sum_{j}\\frac{\\partial^{2}L\\left(\\mu\\right)}{\\partial%\n\\theta_{i}\\partial\\theta_{j}}\\epsilon_{j}\\sigma_{j}+O\\left(\\left\\|\\sigma\\right%\n\\|^{2}\\right)\\right)\\epsilon_{i}\\right]$",
+		"word_idx": 25993,
+		"sentence_idx": 281,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=\\mathrm{E}_{\\epsilon}\\left[\\left(\\frac{\\partial L\\left(\\mu\\right%\n)}{\\partial\\theta_{i}}+\\sum_{j}\\frac{\\partial^{2}L\\left(\\mu\\right)}{\\partial%\n\\theta_{i}\\partial\\theta_{j}}\\epsilon_{j}\\sigma_{j}+O\\left(\\left\\|\\sigma\\right%\n\\|^{2}\\right)\\right)\\epsilon_{i}\\right]$$",
+		"word_idx": 26272,
+		"sentence_idx": 282,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "where we used  $\\mathrm{E}_{\\epsilon}\\left[\\epsilon_{i}\\right]=0$  and  $\\mathrm{E}_{\\epsilon}\\left[\\epsilon_{i}\\epsilon_{j}\\right]=\\delta_{ij}$  in the last line",
+		"word_idx": 26805,
+		"sentence_idx": 285,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " Thus, in this case,  $E_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}%\n\\varepsilon_{i}\\right]$  is a finite difference approximation to the component-wise product of the diagonal of the Hessian of the loss, and the vector  $\\sigma$ ",
+		"word_idx": 26967,
+		"sentence_idx": 286,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathrm{E}_{\\epsilon}\\left[\\epsilon_{i}\\right]=0$$",
+		"word_idx": 27696,
+		"sentence_idx": 292,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathrm{E}_{\\epsilon}\\left[\\epsilon_{i}\\epsilon_{j}\\right]=\\delta_{ij}$$",
+		"word_idx": 27744,
+		"sentence_idx": 293,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$E_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}%\n\\varepsilon_{i}\\right]$$",
+		"word_idx": 27814,
+		"sentence_idx": 294,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " If  $L\\left(\\theta\\right)$  is a strongly convex function with parameter  $m>0$  and a continuously\ndifferentiable function over  $\\mathbb{R}^{n}$ , then\n $\\mathbf{\\mathrm{E}}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{%\n\\partial\\theta_{i}}\\varepsilon_{i}\\right]>0$ ",
+		"word_idx": 28221,
+		"sentence_idx": 301,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathbf{\\mathrm{E}}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{%\n\\partial\\theta_{i}}\\varepsilon_{i}\\right]>0$$",
+		"word_idx": 28544,
+		"sentence_idx": 306,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$E_{\\varepsilon}\\left[\\frac{\\partial f\\left(\\theta,\\phi\\right)}{\\partial\\theta_%\n{i}}\\frac{\\partial\\theta_{i}}{\\partial\\mu_{i}}+\\frac{\\partial f\\left(\\theta,w%\n\\right)}{\\partial\\mu_{i}}\\right]=0$",
+		"word_idx": 46914,
+		"sentence_idx": 574,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$E_{\\varepsilon}\\left[\\frac{\\partial f\\left(\\theta,\\phi\\right)}{\\partial\\theta_%\n{i}}\\frac{\\partial\\theta_{i}}{\\partial\\mu_{i}}+\\frac{\\partial f\\left(\\theta,w%\n\\right)}{\\partial\\mu_{i}}\\right]=0$$",
+		"word_idx": 47109,
+		"sentence_idx": 575,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle E_{\\varepsilon}\\left[-\\frac{1}{\\sigma_{i}^{2}}\\left(\\theta_{i}-%\n\\mu_{i}\\right)+\\frac{1}{v_{i}^{2}}\\left(\\theta_{i}-m_{i}\\right)\\right$",
+		"word_idx": 47342,
+		"sentence_idx": 577,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle E_{\\varepsilon}\\left[-\\frac{1}{\\sigma_{i}^{2}}\\left(\\theta_{i}-%\n\\mu_{i}\\right)+\\frac{1}{v_{i}^{2}}\\left(\\theta_{i}-m_{i}\\right)\\right.$$",
+		"word_idx": 47492,
+		"sentence_idx": 578,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\frac{1}{v_{i}^{2}}\\left(\\mu_{i}-m_{i}\\right)+E_{\\varepsilon}%\n\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right]$",
+		"word_idx": 47954,
+		"sentence_idx": 583,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\frac{1}{v_{i}^{2}}\\left(\\mu_{i}-m_{i}\\right)+E_{\\varepsilon}%\n\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right]$$",
+		"word_idx": 48101,
+		"sentence_idx": 584,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$E_{\\varepsilon}\\left[\\frac{\\partial f\\left(\\theta,\\phi\\right)}{\\partial\\theta_%\n{i}}\\frac{\\partial\\theta_{i}}{\\partial\\sigma_{i}}+\\frac{\\partial f\\left(\\theta%\n,w\\right)}{\\partial\\sigma_{i}}\\right]=0$",
+		"word_idx": 48453,
+		"sentence_idx": 593,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$E_{\\varepsilon}\\left[\\frac{\\partial f\\left(\\theta,\\phi\\right)}{\\partial\\theta_%\n{i}}\\frac{\\partial\\theta_{i}}{\\partial\\sigma_{i}}+\\frac{\\partial f\\left(\\theta%\n,w\\right)}{\\partial\\sigma_{i}}\\right]=0$$",
+		"word_idx": 48654,
+		"sentence_idx": 594,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle E_{\\varepsilon}\\left[\\left(-\\frac{1}{\\sigma_{i}^{2}}\\left(\\theta%\n_{i}-\\mu_{i}\\right)+\\frac{1}{v_{i}^{2}}\\left(\\theta_{i}-m_{i}\\right)+\\frac{%\n\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right)\\varepsilon_{i}\\right$",
+		"word_idx": 48892,
+		"sentence_idx": 596,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle E_{\\varepsilon}\\left[\\left(-\\frac{1}{\\sigma_{i}^{2}}\\left(\\theta%\n_{i}-\\mu_{i}\\right)+\\frac{1}{v_{i}^{2}}\\left(\\theta_{i}-m_{i}\\right)+\\frac{%\n\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right)\\varepsilon_{i}\\right.$$",
+		"word_idx": 49129,
+		"sentence_idx": 597,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle-\\frac{1}{\\sigma_{i}}+\\frac{\\sigma_{i}}{v_{i}^{2}}+E_{\\varepsilon%\n}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]$",
+		"word_idx": 49614,
+		"sentence_idx": 602,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle-\\frac{1}{\\sigma_{i}}+\\frac{\\sigma_{i}}{v_{i}^{2}}+E_{\\varepsilon%\n}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]$$",
+		"word_idx": 49781,
+		"sentence_idx": 603,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\sigma_{i}^{2}+\\sigma_{i}v_{i}^{2}E_{q\\left(\\varepsilon\\right)}\\left[\\frac{%\n\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]-v_{i}%\n^{2}=0$",
+		"word_idx": 50033,
+		"sentence_idx": 608,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\sigma_{i}^{2}+\\sigma_{i}v_{i}^{2}E_{q\\left(\\varepsilon\\right)}\\left[\\frac{%\n\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right]-v_{i}%\n^{2}=0.$$",
+		"word_idx": 50198,
+		"sentence_idx": 609,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "We define  $\\theta_{j}=\\mu_{j}+\\varepsilon_{j}\\sigma_{j}$  where  $\\varepsilon_{j}\\sim\\mathcal{N}\\left(0,1\\right)$ ",
+		"word_idx": 50476,
+		"sentence_idx": 615,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta_{j}=\\mu_{j}+\\varepsilon_{j}\\sigma_{j}$$",
+		"word_idx": 50648,
+		"sentence_idx": 617,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\varepsilon_{j}\\sim\\mathcal{N}\\left(0,1\\right)$$",
+		"word_idx": 50692,
+		"sentence_idx": 618,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\mathbf{\\mathrm{E}}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{%\n\\partial\\theta_{i}}\\varepsilon_{i}\\right]=\\mathrm{E}_{\\varepsilon_{j\\neq i}}%\n\\left[\\mathbf{\\mathrm{E}}_{\\varepsilon_{i}}\\left[\\left\\frac{\\partial L\\left(%\n\\theta\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right|\\varepsilon_{j\\neq i}%\n\\right]\\right]$",
+		"word_idx": 50738,
+		"sentence_idx": 619,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathbf{\\mathrm{E}}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{%\n\\partial\\theta_{i}}\\varepsilon_{i}\\right]=\\mathrm{E}_{\\varepsilon_{j\\neq i}}%\n\\left[\\mathbf{\\mathrm{E}}_{\\varepsilon_{i}}\\left[\\left.\\frac{\\partial L\\left(%\n\\theta\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right|\\varepsilon_{j\\neq i}%\n\\right]\\right]$$",
+		"word_idx": 51067,
+		"sentence_idx": 620,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\mathbf{\\mathrm{E}}_{\\varepsilon_{i}}\\left[\\left\\frac{\\partial L\\left(\\theta%\n\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right|\\varepsilon_{j\\neq i}\\right]%\n=\\intop_{-\\infty}^{\\infty}\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_%\n{i}}\\varepsilon_{i}f_{\\varepsilon_{i}}\\left(\\varepsilon_{i}\\right)d\\varepsilon%\n_{i}\\,,$",
+		"word_idx": 51426,
+		"sentence_idx": 622,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathbf{\\mathrm{E}}_{\\varepsilon_{i}}\\left[\\left.\\frac{\\partial L\\left(\\theta%\n\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right|\\varepsilon_{j\\neq i}\\right]%\n=\\intop_{-\\infty}^{\\infty}\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_%\n{i}}\\varepsilon_{i}f_{\\varepsilon_{i}}\\left(\\varepsilon_{i}\\right)d\\varepsilon%\n_{i}\\,,$$",
+		"word_idx": 51753,
+		"sentence_idx": 623,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\mathbf{\\mathrm{E}}_{\\varepsilon_{i}}\\left[\\left\\frac{\\partial L%\n\\left(\\theta\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right|\\varepsilon_{j%\n\\neq i}\\right]=$",
+		"word_idx": 52193,
+		"sentence_idx": 626,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\mathbf{\\mathrm{E}}_{\\varepsilon_{i}}\\left[\\left.\\frac{\\partial L%\n\\left(\\theta\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}\\right|\\varepsilon_{j%\n\\neq i}\\right]=$$",
+		"word_idx": 52367,
+		"sentence_idx": 627,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\intop_{0}^{\\infty}\\frac{\\partial L\\left(\\mu_{i}+\\varepsilon_{i}%\n\\sigma_{i},\\theta_{-i}\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}f_{%\n\\varepsilon_{i}}\\left(\\varepsilon_{i}\\right)d\\varepsilon_{i}$",
+		"word_idx": 52540,
+		"sentence_idx": 628,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\intop_{0}^{\\infty}\\frac{\\partial L\\left(\\mu_{i}+\\varepsilon_{i}%\n\\sigma_{i},\\theta_{-i}\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}f_{%\n\\varepsilon_{i}}\\left(\\varepsilon_{i}\\right)d\\varepsilon_{i}$$",
+		"word_idx": 52751,
+		"sentence_idx": 629,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\intop_{0}^{\\infty}\\frac{\\partial L\\left(\\mu_{i}-\\varepsilon_{i}%\n\\sigma_{i},\\theta_{-i}\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}f_{%\n\\varepsilon_{i}}\\left(\\varepsilon_{i}\\right)d\\varepsilon_{i}$",
+		"word_idx": 52996,
+		"sentence_idx": 633,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\intop_{0}^{\\infty}\\frac{\\partial L\\left(\\mu_{i}-\\varepsilon_{i}%\n\\sigma_{i},\\theta_{-i}\\right)}{\\partial\\theta_{i}}\\varepsilon_{i}f_{%\n\\varepsilon_{i}}\\left(\\varepsilon_{i}\\right)d\\varepsilon_{i}.$$",
+		"word_idx": 53207,
+		"sentence_idx": 634,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "For  $\\theta_{1}=\\left(\\mu_{i}+\\varepsilon_{i}\\sigma_{i},\\theta_{-i}\\right)$ \nand  $\\theta_{2}=\\left(\\mu_{i}-\\varepsilon_{i}\\sigma_{i},\\theta_{-i}\\right)$ ,\nthe following holds:",
+		"word_idx": 54040,
+		"sentence_idx": 642,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta_{1}=\\left(\\mu_{i}+\\varepsilon_{i}\\sigma_{i},\\theta_{-i}\\right)$$",
+		"word_idx": 54217,
+		"sentence_idx": 643,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta_{2}=\\left(\\mu_{i}-\\varepsilon_{i}\\sigma_{i},\\theta_{-i}\\right)$$",
+		"word_idx": 54286,
+		"sentence_idx": 644,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\left(\\frac{\\partial L\\left(\\theta_{1}\\right)}{\\partial\\theta_{i}}-\\frac{%\n\\partial L\\left(\\theta_{2}\\right)}{\\partial\\theta_{i}}\\right)\\varepsilon_{i}%\n\\geq m\\left|\\varepsilon_{i}\\right|$",
+		"word_idx": 54355,
+		"sentence_idx": 645,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\left(\\frac{\\partial L\\left(\\theta_{1}\\right)}{\\partial\\theta_{i}}-\\frac{%\n\\partial L\\left(\\theta_{2}\\right)}{\\partial\\theta_{i}}\\right)\\varepsilon_{i}%\n\\geq m\\left|\\varepsilon_{i}\\right|$$",
+		"word_idx": 54544,
+		"sentence_idx": 646,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\mathbf{\\mathrm{E}}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{%\n\\partial\\theta_{i}}\\varepsilon_{i}\\right]\\geq\\frac{m}{\\sqrt{2\\pi}}>0$",
+		"word_idx": 54795,
+		"sentence_idx": 649,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathbf{\\mathrm{E}}_{\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{%\n\\partial\\theta_{i}}\\varepsilon_{i}\\right]\\geq\\frac{m}{\\sqrt{2\\pi}}>0$$",
+		"word_idx": 54943,
+		"sentence_idx": 650,
+		"label": "none"
+	}]
+}

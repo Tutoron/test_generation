@@ -1,0 +1,65 @@
+{
+	"doc_name": "Bayesian_Gradient_Descent",
+	"symbol_expr": "m_{i}",
+	"sentences": [{
+		"type": "text",
+		"expr": "$q_{n}\\left(\\theta\\right)=\\prod_{i}\\mathcal{N}\\left(\\theta_{i}|m_{i},v_{i}^{2}\\right)$",
+		"word_idx": 16910,
+		"sentence_idx": 177,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$q_{n}\\left(\\theta\\right)=\\prod_{i}\\mathcal{N}\\left(\\theta_{i}|m_{i},v_{i}^{2}\\right)$$",
+		"word_idx": 16996,
+		"sentence_idx": 178,
+		"label": "definition"
+	}, {
+		"type": "text",
+		"expr": "$\\mu_{i}=m_{i}-v_{i}^{2}\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(%\n\\theta\\right)}{\\partial\\theta_{i}}\\right]$",
+		"word_idx": 19131,
+		"sentence_idx": 208,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mu_{i}=m_{i}-v_{i}^{2}\\mathrm{E}_{\\varepsilon}\\left[\\frac{\\partial L\\left(%\n\\theta\\right)}{\\partial\\theta_{i}}\\right]$$",
+		"word_idx": 19251,
+		"sentence_idx": 209,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle E_{\\varepsilon}\\left[-\\frac{1}{\\sigma_{i}^{2}}\\left(\\theta_{i}-%\n\\mu_{i}\\right)+\\frac{1}{v_{i}^{2}}\\left(\\theta_{i}-m_{i}\\right)\\right$",
+		"word_idx": 47342,
+		"sentence_idx": 577,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle E_{\\varepsilon}\\left[-\\frac{1}{\\sigma_{i}^{2}}\\left(\\theta_{i}-%\n\\mu_{i}\\right)+\\frac{1}{v_{i}^{2}}\\left(\\theta_{i}-m_{i}\\right)\\right.$$",
+		"word_idx": 47492,
+		"sentence_idx": 578,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\frac{1}{v_{i}^{2}}\\left(\\mu_{i}-m_{i}\\right)+E_{\\varepsilon}%\n\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right]$",
+		"word_idx": 47954,
+		"sentence_idx": 583,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\frac{1}{v_{i}^{2}}\\left(\\mu_{i}-m_{i}\\right)+E_{\\varepsilon}%\n\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right]$$",
+		"word_idx": 48101,
+		"sentence_idx": 584,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle E_{\\varepsilon}\\left[\\left(-\\frac{1}{\\sigma_{i}^{2}}\\left(\\theta%\n_{i}-\\mu_{i}\\right)+\\frac{1}{v_{i}^{2}}\\left(\\theta_{i}-m_{i}\\right)+\\frac{%\n\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right)\\varepsilon_{i}\\right$",
+		"word_idx": 48892,
+		"sentence_idx": 596,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle E_{\\varepsilon}\\left[\\left(-\\frac{1}{\\sigma_{i}^{2}}\\left(\\theta%\n_{i}-\\mu_{i}\\right)+\\frac{1}{v_{i}^{2}}\\left(\\theta_{i}-m_{i}\\right)+\\frac{%\n\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right)\\varepsilon_{i}\\right.$$",
+		"word_idx": 49129,
+		"sentence_idx": 597,
+		"label": "none"
+	}]
+}

@@ -1,0 +1,377 @@
+{
+	"doc_name": "Fast_Parametric_Learning_with_Activation_Memorization",
+	"symbol_expr": "h_{t}",
+	"sentences": [{
+		"type": "text",
+		"expr": "Motivated from these memory systems, we explore a very simple optimization procedure where the network accumulates activations  $h_{t}$  directly into the softmax layer weights  $\\theta[y_{t}]$  when a class  $y_{t}$  has been seen a small number of times, and uses gradient descent otherwise",
+		"word_idx": 6827,
+		"sentence_idx": 65,
+		"label": "definition"
+	}, {
+		"type": "text",
+		"expr": " Accumulating or smoothing network activations into the weights actually corresponds to the well-known Hebbian learning update rule  $W[i,j]\\leftarrow\\frac{1}{n}\\sum_{t=1}^{n}x_{t}^{i}x_{t}^{j}$   \\citep hebb1949organization in the special case of classification on the output layer, where  $W,x_{t}^{i},x_{t}^{j}$  correspond to  $\\theta,h_{t},y_{t}$  respectively",
+		"word_idx": 7119,
+		"sentence_idx": 66,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 7929,
+		"sentence_idx": 70,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta,h_{t},y_{t}$$",
+		"word_idx": 8038,
+		"sentence_idx": 76,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " The conditional probability of a word  $w$  occurring is proportional to the sum over kernalized inner product similarities between the current hidden state  $h_{t}$  and past hidden states when word  $w$  occurred",
+		"word_idx": 10440,
+		"sentence_idx": 105,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 10667,
+		"sentence_idx": 108,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$p_{c}(w\\mid h_{t})\\propto\\sum_{i=t-n}^{t-1}e^{h_{t}^{T}h_{i}}\\,\\mathbb{I}\\{y_{%\ni}=w\\}$",
+		"word_idx": 10672,
+		"sentence_idx": 109,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$p_{c}(w\\mid h_{t})\\propto\\sum_{i=t-n}^{t-1}e^{h_{t}^{T}h_{i}}\\,\\mathbb{I}\\{y_{%\ni}=w\\}$$",
+		"word_idx": 10760,
+		"sentence_idx": 110,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": " This is interpolated with the hidden activation at the time of class occurrence,  $h_{t}$ ",
+		"word_idx": 15874,
+		"sentence_idx": 158,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 16320,
+		"sentence_idx": 165,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\hat{\\theta}_{t+05}[i]\\leftarrow\\begin{cases}\\theta_{t}[i]-%\n\\alpha\\,(p_{i}-1)\\,h_{t}&i=y_{t}\\\\\n\\theta_{t}[i]-\\alpha\\,p_{i}\\,h_{t}&i\\neq y_{t}\\end{cases}$",
+		"word_idx": 16587,
+		"sentence_idx": 171,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\hat{\\theta}_{t+0.5}[i]\\leftarrow\\begin{cases}\\theta_{t}[i]-%\n\\alpha\\,(p_{i}-1)\\,h_{t}&i=y_{t}\\\\\n\\theta_{t}[i]-\\alpha\\,p_{i}\\,h_{t}&i\\neq y_{t}\\end{cases}$$",
+		"word_idx": 16755,
+		"sentence_idx": 172,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "where  $p_{i}=e^{h_{t}^{T}\\theta_{i}}/\\sum_{j=1}^{n}e^{h_{t}^{T}\\theta_{j}}$  is the probability output from the softmax, and  $\\alpha$  is the learning rate",
+		"word_idx": 16922,
+		"sentence_idx": 173,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " This is interpolated with the previous layer\u2019s hidden activation  $h_{t}$  for the active class  $y_{t}$ ,",
+		"word_idx": 17231,
+		"sentence_idx": 175,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$p_{i}=e^{h_{t}^{T}\\theta_{i}}/\\sum_{j=1}^{n}e^{h_{t}^{T}\\theta_{j}}$$",
+		"word_idx": 17338,
+		"sentence_idx": 176,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 17437,
+		"sentence_idx": 180,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\theta_{t+1}[i]\\leftarrow\\begin{cases}\\lambda_{t}\\,h_{t}+(1-%\n\\lambda_{t})\\,\\hat{\\theta}_{t+05}[i]&i=y_{t}\\\\\n\\hat{\\theta}_{t+05}[i]&i\\neq y_{t}\\;,\\end{cases}$",
+		"word_idx": 17447,
+		"sentence_idx": 182,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\theta_{t+1}[i]\\leftarrow\\begin{cases}\\lambda_{t}\\,h_{t}+(1-%\n\\lambda_{t})\\,\\hat{\\theta}_{t+0.5}[i]&i=y_{t}\\\\\n\\hat{\\theta}_{t+0.5}[i]&i\\neq y_{t}\\;,\\end{cases}$$",
+		"word_idx": 17619,
+		"sentence_idx": 183,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " When  $\\lambda_{t}=1$  this corresponds to the rule  $\\theta_{t+1}\\leftarrow h_{t}\\cdot\\mathbb{I}\\{y_{t}\\}$  where  $\\mathbb{I}\\{y_{t}\\}\\in[0,1]^{m}$  is a one-hot target vector",
+		"word_idx": 17819,
+		"sentence_idx": 185,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " In this case Hebbian update rule,  $W_{ij}\\leftarrow x_{i}x_{j}$  for  $x_{i}=h_{t}$  the hidden output and  $x_{j}=\\mathbb{I}\\{y_{t}\\}$  the target",
+		"word_idx": 17997,
+		"sentence_idx": 186,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta_{t+1}\\leftarrow h_{t}\\cdot\\mathbb{I}\\{y_{t}\\}$$",
+		"word_idx": 18364,
+		"sentence_idx": 190,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$x_{i}=h_{t}$$",
+		"word_idx": 18474,
+		"sentence_idx": 193,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " This is to ensure we smooth over many class examples in a given epoch, and the memorization of activations continues until the representation of  $h_{t}$  stabilizes",
+		"word_idx": 19721,
+		"sentence_idx": 208,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 21207,
+		"sentence_idx": 220,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " The value  $\\theta[y_{t}]$  would indeed be pulled towards a large inner product with  $h_{t}$ , however neighbouring parameters  $\\theta[i];\\;i\\neq y_{t}$  would be pushed towards a large negative inner product with  $h_{t}$  and this could lead to catastrophic forgetting of previously consolidated classes",
+		"word_idx": 23039,
+		"sentence_idx": 270,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 23499,
+		"sentence_idx": 273,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 23527,
+		"sentence_idx": 275,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle p_{c}(w\\mid h_{t})$",
+		"word_idx": 24270,
+		"sentence_idx": 284,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle p_{c}(w\\mid h_{t})$$",
+		"word_idx": 24304,
+		"sentence_idx": 285,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\propto\\displaystyle\\sum_{i=t-n}^{t-1}e^{h_{t}^{T}h_{i}}\\mathbb{I%\n}\\{y_{i}=w\\}$",
+		"word_idx": 24336,
+		"sentence_idx": 286,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\propto\\displaystyle\\sum_{i=t-n}^{t-1}e^{h_{t}^{T}h_{i}}\\mathbb{I%\n}\\{y_{i}=w\\}$$",
+		"word_idx": 24430,
+		"sentence_idx": 287,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle=\\displaystyle\\sum_{j=1}^{N_{w}}e^{g(j)\\,h_{t}^{T}h_{I_{w}(j)}}$",
+		"word_idx": 24522,
+		"sentence_idx": 288,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=\\displaystyle\\sum_{j=1}^{N_{w}}e^{g(j)\\,h_{t}^{T}h_{I_{w}(j)}}$$",
+		"word_idx": 24600,
+		"sentence_idx": 289,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\tilde{p}_{c}(w\\mid h_{t})\\propto\\sum_{j=1}^{N_{w}}e^{\\lambda\\,(1-\\lambda)^{j-%\n1}\\,h_{t}^{T}h_{I_{w}(j)}}$",
+		"word_idx": 25393,
+		"sentence_idx": 297,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\tilde{p}_{c}(w\\mid h_{t})\\propto\\sum_{j=1}^{N_{w}}e^{\\lambda\\,(1-\\lambda)^{j-%\n1}\\,h_{t}^{T}h_{I_{w}(j)}}$$",
+		"word_idx": 25501,
+		"sentence_idx": 298,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle p_{\\theta}(w\\mid h_{t})\\propto e^{h_{t}^{T}\\theta_{w}}$",
+		"word_idx": 26210,
+		"sentence_idx": 308,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle p_{\\theta}(w\\mid h_{t})\\propto e^{h_{t}^{T}\\theta_{w}}$$",
+		"word_idx": 26280,
+		"sentence_idx": 309,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\approx e^{h_{t}^{T}\\sum_{j=1}^{N_{w}}\\lambda\\,(1-\\lambda)^{j-1}h%\n_{I_{w}(j)}}$",
+		"word_idx": 26348,
+		"sentence_idx": 310,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\approx e^{h_{t}^{T}\\sum_{j=1}^{N_{w}}\\lambda\\,(1-\\lambda)^{j-1}h%\n_{I_{w}(j)}}$$",
+		"word_idx": 26442,
+		"sentence_idx": 311,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle=\\prod_{j=1}^{N_{w}}e^{\\lambda\\,(1-\\lambda)^{j-1}h_{t}^{T}h_{I_{w%\n}(j)}}\\,$",
+		"word_idx": 26534,
+		"sentence_idx": 312,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=\\prod_{j=1}^{N_{w}}e^{\\lambda\\,(1-\\lambda)^{j-1}h_{t}^{T}h_{I_{w%\n}(j)}}\\,.$$",
+		"word_idx": 26624,
+		"sentence_idx": 313,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\theta_{t+1}[i]\\leftarrow\\lambda_{t}\\,h_{t}+(1-\\lambda_{t})\\,\\hat{\\theta}_{t+0%\n5}[i]$",
+		"word_idx": 27436,
+		"sentence_idx": 323,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta_{t+1}[i]\\leftarrow\\lambda_{t}\\,h_{t}+(1-\\lambda_{t})\\,\\hat{\\theta}_{t+0%\n.5}[i].$$",
+		"word_idx": 27523,
+		"sentence_idx": 324,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle w^{*}\\leftarrow\\operatornamewithlimits{arg\\,max}_{w}-||w-h_{t}||%\n_{2}$",
+		"word_idx": 27956,
+		"sentence_idx": 329,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle w^{*}\\leftarrow\\operatornamewithlimits{arg\\,max}_{w}-||w-h_{t}||%\n_{2}$$",
+		"word_idx": 28042,
+		"sentence_idx": 330,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " The outer optimization loop is the mixture of gradient descent and exponential smoothing, and the inner optimization loop determines a good value for  $w^{*}$  based on the activation  $h_{t}$  and the current parameters",
+		"word_idx": 28200,
+		"sentence_idx": 332,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 28426,
+		"sentence_idx": 334,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " Notably, switching to inner product similarity ( IP ), and also incorporating a cost to parameter similarity ( SVM, Smax ) to push  $w^{*}$  towards  $h_{t}$  but away from neighbouring parameters \u2014 to avoid confusion or interference with other classes",
+		"word_idx": 28565,
+		"sentence_idx": 336,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 29005,
+		"sentence_idx": 341,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle g_{\\tiny\\hbox{L2}}(w)=-||w-h_{t}||_{2}$",
+		"word_idx": 29156,
+		"sentence_idx": 344,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle g_{\\tiny\\hbox{L2}}(w)=-||w-h_{t}||_{2}$$",
+		"word_idx": 29210,
+		"sentence_idx": 345,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle g_{\\tiny\\hbox{IP}}(w)=w^{T}h_{t}$",
+		"word_idx": 29262,
+		"sentence_idx": 346,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle g_{\\tiny\\hbox{IP}}(w)=w^{T}h_{t}$$",
+		"word_idx": 29310,
+		"sentence_idx": 347,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle g_{\\tiny\\hbox{SVM}}(w)=w^{T}h_{t}-\\kern-100pt\\displaystyle\\sum_%\n{\\theta_{j}\\in\\mathcal{N}_{k}(h_{t})}\\kern-100pt\\xi\\,w^{T}\\theta_{j}\\,\\cdot\\,%\n\\mathbb{I}(w^{T}\\theta_{j}>\\epsilon)$",
+		"word_idx": 29356,
+		"sentence_idx": 348,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle g_{\\tiny\\hbox{SVM}}(w)=w^{T}h_{t}-\\kern-10.0pt\\displaystyle\\sum_%\n{\\theta_{j}\\in\\mathcal{N}_{k}(h_{t})}\\kern-10.0pt\\xi\\,w^{T}\\theta_{j}\\,\\cdot\\,%\n\\mathbb{I}(w^{T}\\theta_{j}>\\epsilon)$$",
+		"word_idx": 29552,
+		"sentence_idx": 349,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle g_{\\tiny\\hbox{Smax}}(w)=e^{w^{T}h_{t}}/\\displaystyle\\sum_{\\theta%\n_{j}\\in\\mathcal{N}_{k}(h_{t})}e^{w^{T}\\theta_{j}}$",
+		"word_idx": 29748,
+		"sentence_idx": 350,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle g_{\\tiny\\hbox{Smax}}(w)=e^{w^{T}h_{t}}/\\displaystyle\\sum_{\\theta%\n_{j}\\in\\mathcal{N}_{k}(h_{t})}e^{w^{T}\\theta_{j}}$$",
+		"word_idx": 29879,
+		"sentence_idx": 351,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "where  $\\mathcal{N}_{k}(h_{t})$  refers to the  $k$  nearest parameters to the activation  $h_{t}$  that do not correspond to  $y_{t}$ , the class label",
+		"word_idx": 30008,
+		"sentence_idx": 352,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathcal{N}_{k}(h_{t})$$",
+		"word_idx": 30460,
+		"sentence_idx": 355,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 30482,
+		"sentence_idx": 356,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " This suggests the network activation  $h_{t}$  naturally do not land too close to other class parameters, and the norm of activations is not too large or small, in comparison to the model parameters  $\\theta$ ",
+		"word_idx": 42413,
+		"sentence_idx": 577,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$h_{t}$$",
+		"word_idx": 42693,
+		"sentence_idx": 579,
+		"label": "none"
+	}]
+}

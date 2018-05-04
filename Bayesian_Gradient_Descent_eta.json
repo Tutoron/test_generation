@@ -1,0 +1,77 @@
+{
+	"doc_name": "Bayesian_Gradient_Descent",
+	"symbol_expr": "\\eta",
+	"sentences": [{
+		"type": "text",
+		"expr": " We use an hyperparameter  $\\eta$  to compensate over the added error",
+		"word_idx": 20451,
+		"sentence_idx": 218,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$\\eta$$",
+		"word_idx": 20705,
+		"sentence_idx": 224,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\mu,\\sigma,\\eta$",
+		"word_idx": 20847,
+		"sentence_idx": 231,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\mu,\\sigma,\\eta$$",
+		"word_idx": 20864,
+		"sentence_idx": 232,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": "$\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\mu_{i}\\leftarrow\\mu_{i}-\\eta\\sigma_{i}^{2}E_{%\n\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right]$",
+		"word_idx": 20885,
+		"sentence_idx": 234,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\!\\mu_{i}\\leftarrow\\mu_{i}-\\eta\\sigma_{i}^{2}E_{%\n\\varepsilon}\\left[\\frac{\\partial L\\left(\\theta\\right)}{\\partial\\theta_{i}}\\right]$$",
+		"word_idx": 21040,
+		"sentence_idx": 235,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "\nWe use mini-batch of size 128 and  $\\eta=1$ ",
+		"word_idx": 34718,
+		"sentence_idx": 385,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\eta=1$$",
+		"word_idx": 35170,
+		"sentence_idx": 390,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": "015 and  $\\eta=6$ ",
+		"word_idx": 40599,
+		"sentence_idx": 490,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\eta=6$$",
+		"word_idx": 40617,
+		"sentence_idx": 491,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": "019 and  $\\eta=2$ ",
+		"word_idx": 41591,
+		"sentence_idx": 506,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\eta=2$$",
+		"word_idx": 41785,
+		"sentence_idx": 510,
+		"label": "usecase"
+	}]
+}

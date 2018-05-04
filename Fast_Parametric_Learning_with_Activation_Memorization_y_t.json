@@ -1,0 +1,185 @@
+{
+	"doc_name": "Fast_Parametric_Learning_with_Activation_Memorization",
+	"symbol_expr": "y_{t}",
+	"sentences": [{
+		"type": "text",
+		"expr": "Motivated from these memory systems, we explore a very simple optimization procedure where the network accumulates activations  $h_{t}$  directly into the softmax layer weights  $\\theta[y_{t}]$  when a class  $y_{t}$  has been seen a small number of times, and uses gradient descent otherwise",
+		"word_idx": 6827,
+		"sentence_idx": 65,
+		"label": "definition"
+	}, {
+		"type": "text",
+		"expr": " Accumulating or smoothing network activations into the weights actually corresponds to the well-known Hebbian learning update rule  $W[i,j]\\leftarrow\\frac{1}{n}\\sum_{t=1}^{n}x_{t}^{i}x_{t}^{j}$   \\citep hebb1949organization in the special case of classification on the output layer, where  $W,x_{t}^{i},x_{t}^{j}$  correspond to  $\\theta,h_{t},y_{t}$  respectively",
+		"word_idx": 7119,
+		"sentence_idx": 66,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta[y_{t}]$$",
+		"word_idx": 7934,
+		"sentence_idx": 71,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$y_{t}$$",
+		"word_idx": 7947,
+		"sentence_idx": 72,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta,h_{t},y_{t}$$",
+		"word_idx": 8038,
+		"sentence_idx": 76,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " Here the vector  $\\hat{\\theta}_{t+05}$  denotes the parameters  $\\theta_{t}[y_{t}]$  of the final layer softmax corresponding to the active class  $y_{t}$  after one step of gradient descent",
+		"word_idx": 15683,
+		"sentence_idx": 157,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " Here,  $\\mathbb{I}\\{y_{t}\\}$  is the one-hot target vector,  $V$  denotes the vocabulary of classes, and  $c_{t}$  is defined to be a counter of class occurrences during training \u2014 which is used to anneal  $\\lambda_{t}$  as described in ( 4 )",
+		"word_idx": 16026,
+		"sentence_idx": 160,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta_{t}[y_{t}]$$",
+		"word_idx": 16298,
+		"sentence_idx": 163,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$y_{t}$$",
+		"word_idx": 16315,
+		"sentence_idx": 164,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathbb{I}\\{y_{t}\\}$$",
+		"word_idx": 16325,
+		"sentence_idx": 166,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\hat{\\theta}_{t+05}[i]\\leftarrow\\begin{cases}\\theta_{t}[i]-%\n\\alpha\\,(p_{i}-1)\\,h_{t}&i=y_{t}\\\\\n\\theta_{t}[i]-\\alpha\\,p_{i}\\,h_{t}&i\\neq y_{t}\\end{cases}$",
+		"word_idx": 16587,
+		"sentence_idx": 171,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\hat{\\theta}_{t+0.5}[i]\\leftarrow\\begin{cases}\\theta_{t}[i]-%\n\\alpha\\,(p_{i}-1)\\,h_{t}&i=y_{t}\\\\\n\\theta_{t}[i]-\\alpha\\,p_{i}\\,h_{t}&i\\neq y_{t}\\end{cases}$$",
+		"word_idx": 16755,
+		"sentence_idx": 172,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " This is interpolated with the previous layer\u2019s hidden activation  $h_{t}$  for the active class  $y_{t}$ ,",
+		"word_idx": 17231,
+		"sentence_idx": 175,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$y_{t}$$",
+		"word_idx": 17442,
+		"sentence_idx": 181,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\theta_{t+1}[i]\\leftarrow\\begin{cases}\\lambda_{t}\\,h_{t}+(1-%\n\\lambda_{t})\\,\\hat{\\theta}_{t+05}[i]&i=y_{t}\\\\\n\\hat{\\theta}_{t+05}[i]&i\\neq y_{t}\\;,\\end{cases}$",
+		"word_idx": 17447,
+		"sentence_idx": 182,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\theta_{t+1}[i]\\leftarrow\\begin{cases}\\lambda_{t}\\,h_{t}+(1-%\n\\lambda_{t})\\,\\hat{\\theta}_{t+0.5}[i]&i=y_{t}\\\\\n\\hat{\\theta}_{t+0.5}[i]&i\\neq y_{t}\\;,\\end{cases}$$",
+		"word_idx": 17619,
+		"sentence_idx": 183,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " When  $\\lambda_{t}=1$  this corresponds to the rule  $\\theta_{t+1}\\leftarrow h_{t}\\cdot\\mathbb{I}\\{y_{t}\\}$  where  $\\mathbb{I}\\{y_{t}\\}\\in[0,1]^{m}$  is a one-hot target vector",
+		"word_idx": 17819,
+		"sentence_idx": 185,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": " In this case Hebbian update rule,  $W_{ij}\\leftarrow x_{i}x_{j}$  for  $x_{i}=h_{t}$  the hidden output and  $x_{j}=\\mathbb{I}\\{y_{t}\\}$  the target",
+		"word_idx": 17997,
+		"sentence_idx": 186,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta_{t+1}\\leftarrow h_{t}\\cdot\\mathbb{I}\\{y_{t}\\}$$",
+		"word_idx": 18364,
+		"sentence_idx": 190,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\mathbb{I}\\{y_{t}\\}\\in[0,1]^{m}$$",
+		"word_idx": 18416,
+		"sentence_idx": 191,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$x_{j}=\\mathbb{I}\\{y_{t}\\}$$",
+		"word_idx": 18485,
+		"sentence_idx": 194,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\lambda_{t}=\\max(1\\,/\\,\\mathbf{c}[y_{t}],\\;\\gamma)\\,\\cdot\\,\\mathbb{I}\\{\\mathbf%\n{c}[y_{t}]<T\\}$",
+		"word_idx": 18999,
+		"sentence_idx": 201,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\lambda_{t}=\\max(1\\,/\\,\\mathbf{c}[y_{t}],\\;\\gamma)\\,\\cdot\\,\\mathbb{I}\\{\\mathbf%\n{c}[y_{t}]<T\\}$$",
+		"word_idx": 19095,
+		"sentence_idx": 202,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " a constant  $\\lambda$  or pure annealing  $\\lambda_{t}=1/c[y_{t}]$ ",
+		"word_idx": 19439,
+		"sentence_idx": 206,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\lambda_{t}=1/c[y_{t}]$$",
+		"word_idx": 21111,
+		"sentence_idx": 216,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " The value  $\\theta[y_{t}]$  would indeed be pulled towards a large inner product with  $h_{t}$ , however neighbouring parameters  $\\theta[i];\\;i\\neq y_{t}$  would be pushed towards a large negative inner product with  $h_{t}$  and this could lead to catastrophic forgetting of previously consolidated classes",
+		"word_idx": 23039,
+		"sentence_idx": 270,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta[y_{t}]$$",
+		"word_idx": 23486,
+		"sentence_idx": 272,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta[i];\\;i\\neq y_{t}$$",
+		"word_idx": 23504,
+		"sentence_idx": 274,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "where  $\\mathcal{N}_{k}(h_{t})$  refers to the  $k$  nearest parameters to the activation  $h_{t}$  that do not correspond to  $y_{t}$ , the class label",
+		"word_idx": 30008,
+		"sentence_idx": 352,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$y_{t}$$",
+		"word_idx": 30487,
+		"sentence_idx": 357,
+		"label": "none"
+	}]
+}

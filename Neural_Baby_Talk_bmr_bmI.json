@@ -1,0 +1,77 @@
+{
+	"doc_name": "Neural_Baby_Talk",
+	"symbol_expr": "\\bm{r}_{\\bm{I}}",
+	"sentences": [{
+		"type": "text",
+		"expr": " Let  $\\bm{r}_{\\bm{I}}=\\{r_{1},,r_{N}\\}$  be the set of  $N$  images regions extracted from  $\\bm{I}$ ",
+		"word_idx": 12396,
+		"sentence_idx": 132,
+		"label": "definition"
+	}, {
+		"type": "text",
+		"expr": " When generating an entity word in the caption, we want to ground it in a specific image region  $r\\in\\bm{r}_{\\bm{I}}$ ",
+		"word_idx": 12498,
+		"sentence_idx": 133,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\bm{r}_{\\bm{I}}=\\{r_{1},...,r_{N}\\}$$",
+		"word_idx": 12807,
+		"sentence_idx": 137,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$r\\in\\bm{r}_{\\bm{I}}$$",
+		"word_idx": 12848,
+		"sentence_idx": 139,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": " A visual word  $y^{vis}$  is a type of word that is grounded in a specific image region drawn from  $\\bm{r}_{\\bm{I}}$ ",
+		"word_idx": 14072,
+		"sentence_idx": 156,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\bm{r}_{\\bm{I}}$$",
+		"word_idx": 14692,
+		"sentence_idx": 166,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\bm{P}_{\\bm{r}_{\\bm{I}}}^{t}$",
+		"word_idx": 17650,
+		"sentence_idx": 212,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\bm{P}_{\\bm{r}_{\\bm{I}}}^{t}$$",
+		"word_idx": 17693,
+		"sentence_idx": 213,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": " The  softmax  normalizes the vector  $\\bm{u}^{t}$  to be a distribution over grounding regions  $\\bm{r}_{\\bm{I}}$ ",
+		"word_idx": 17979,
+		"sentence_idx": 217,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\bm{r}_{\\bm{I}}$$",
+		"word_idx": 18216,
+		"sentence_idx": 223,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "  $\\bm{P}_{\\bm{r}}^{t}$  is the probability distribution over grounding regions  $\\bm{r}_{\\bm{I}}$  and visual sentinel  $\\tilde{r}$ ",
+		"word_idx": 20545,
+		"sentence_idx": 267,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$\\bm{r}_{\\bm{I}}$$",
+		"word_idx": 20869,
+		"sentence_idx": 275,
+		"label": "none"
+	}]
+}

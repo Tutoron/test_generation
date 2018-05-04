@@ -1,0 +1,41 @@
+{
+	"doc_name": "Neural_Baby_Talk",
+	"symbol_expr": "y^{vis}",
+	"sentences": [{
+		"type": "text",
+		"expr": "In our framework,  $y_{t}$  can be of one of two types: a visual word or a textual word, denoted as  $y^{vis}$  and  $y^{txt}$  respectively",
+		"word_idx": 13932,
+		"sentence_idx": 155,
+		"label": "definition"
+	}, {
+		"type": "text",
+		"expr": " A visual word  $y^{vis}$  is a type of word that is grounded in a specific image region drawn from  $\\bm{r}_{\\bm{I}}$ ",
+		"word_idx": 14072,
+		"sentence_idx": 156,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$y^{vis}$$",
+		"word_idx": 14671,
+		"sentence_idx": 163,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$y^{vis}$$",
+		"word_idx": 14685,
+		"sentence_idx": 165,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " In order to accommodate for these linguistic variations, the visual word  $y^{vis}$  in our model is a refinement of the category name by considering the following two factors:\nFirst, determine the plurality \u2013 whether it should be singular or plural",
+		"word_idx": 22096,
+		"sentence_idx": 295,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$y^{vis}$$",
+		"word_idx": 22481,
+		"sentence_idx": 298,
+		"label": "none"
+	}]
+}

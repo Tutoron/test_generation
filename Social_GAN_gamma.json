@@ -1,0 +1,65 @@
+{
+	"doc_name": "Social_GAN",
+	"symbol_expr": "\\gamma",
+	"sentences": [{
+		"type": "text",
+		"expr": "$\\displaystyle=\\gamma(P_{i},h_{ei}^{t};W_{c})$",
+		"word_idx": 17120,
+		"sentence_idx": 217,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=\\gamma(P_{i},h_{ei}^{t};W_{c})$$",
+		"word_idx": 17166,
+		"sentence_idx": 218,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": "where  $\\gamma(\\cdot)$  is a multi-layer perceptron (MLP) with ReLU non-linearity and  $W_{c}$  is the embedding weight",
+		"word_idx": 17316,
+		"sentence_idx": 223,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$\\gamma(\\cdot)$$",
+		"word_idx": 17517,
+		"sentence_idx": 225,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle=LSTM(\\gamma(P_{i},h_{di}^{t-1}),e_{i}^{t};W_{decoder})$",
+		"word_idx": 18776,
+		"sentence_idx": 249,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=LSTM(\\gamma(P_{i},h_{di}^{t-1}),e_{i}^{t};W_{decoder})$$",
+		"word_idx": 18846,
+		"sentence_idx": 250,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle=\\gamma(h_{di}^{t})$",
+		"word_idx": 19008,
+		"sentence_idx": 253,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=\\gamma(h_{di}^{t})$$",
+		"word_idx": 19042,
+		"sentence_idx": 254,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": " The LSTM weights are denoted by  $W_{decoder}$  and  $\\gamma$  is an MLP",
+		"word_idx": 19185,
+		"sentence_idx": 256,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$\\gamma$$",
+		"word_idx": 19286,
+		"sentence_idx": 260,
+		"label": "none"
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	"doc_name": "Social_GAN",
+	"symbol_expr": "\\hat{y}_{i}",
+	"sentences": [{
+		"type": "text",
+		"expr": " We avoid this by directly predicting the coordinates  $(\\hat{x}_{i}^{t},\\hat{y}_{i}^{t})$ ",
+		"word_idx": 17844,
+		"sentence_idx": 231,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$(\\hat{x}_{i}^{t},\\hat{y}_{i}^{t})$$",
+		"word_idx": 17935,
+		"sentence_idx": 232,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle(\\hat{x}_{i}^{t},\\hat{y}_{i}^{t})$",
+		"word_idx": 18914,
+		"sentence_idx": 251,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle(\\hat{x}_{i}^{t},\\hat{y}_{i}^{t})$$",
+		"word_idx": 18962,
+		"sentence_idx": 252,
+		"label": "none"
+	}]
+}

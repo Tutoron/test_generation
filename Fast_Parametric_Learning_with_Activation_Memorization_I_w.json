@@ -1,0 +1,77 @@
+{
+	"doc_name": "Fast_Parametric_Learning_with_Activation_Memorization",
+	"symbol_expr": "I_{w",
+	"sentences": [{
+		"type": "text",
+		"expr": " If we set  $I_{w}(j)$  to be the time step of j-th most recent occurrence of  $w$ , then we can re-write the cache probability,",
+		"word_idx": 24134,
+		"sentence_idx": 282,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$I_{w}(j)$$",
+		"word_idx": 24262,
+		"sentence_idx": 283,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle=\\displaystyle\\sum_{j=1}^{N_{w}}e^{g(j)\\,h_{t}^{T}h_{I_{w}(j)}}$",
+		"word_idx": 24522,
+		"sentence_idx": 288,
+		"label": "usecase"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=\\displaystyle\\sum_{j=1}^{N_{w}}e^{g(j)\\,h_{t}^{T}h_{I_{w}(j)}}$$",
+		"word_idx": 24600,
+		"sentence_idx": 289,
+		"label": "usecase"
+	}, {
+		"type": "text",
+		"expr": "$\\tilde{p}_{c}(w\\mid h_{t})\\propto\\sum_{j=1}^{N_{w}}e^{\\lambda\\,(1-\\lambda)^{j-%\n1}\\,h_{t}^{T}h_{I_{w}(j)}}$",
+		"word_idx": 25393,
+		"sentence_idx": 297,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\tilde{p}_{c}(w\\mid h_{t})\\propto\\sum_{j=1}^{N_{w}}e^{\\lambda\\,(1-\\lambda)^{j-%\n1}\\,h_{t}^{T}h_{I_{w}(j)}}$$",
+		"word_idx": 25501,
+		"sentence_idx": 298,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\theta_{i}\\approx\\sum_{j=1}^{N_{w}}\\lambda\\,(1-\\lambda)^{j-1}h_{I_{w}(j)}\\;,$",
+		"word_idx": 26001,
+		"sentence_idx": 305,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\theta_{i}\\approx\\sum_{j=1}^{N_{w}}\\lambda\\,(1-\\lambda)^{j-1}h_{I_{w}(j)}\\;,$$",
+		"word_idx": 26079,
+		"sentence_idx": 306,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle\\approx e^{h_{t}^{T}\\sum_{j=1}^{N_{w}}\\lambda\\,(1-\\lambda)^{j-1}h%\n_{I_{w}(j)}}$",
+		"word_idx": 26348,
+		"sentence_idx": 310,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle\\approx e^{h_{t}^{T}\\sum_{j=1}^{N_{w}}\\lambda\\,(1-\\lambda)^{j-1}h%\n_{I_{w}(j)}}$$",
+		"word_idx": 26442,
+		"sentence_idx": 311,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "$\\displaystyle=\\prod_{j=1}^{N_{w}}e^{\\lambda\\,(1-\\lambda)^{j-1}h_{t}^{T}h_{I_{w%\n}(j)}}\\,$",
+		"word_idx": 26534,
+		"sentence_idx": 312,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=\\prod_{j=1}^{N_{w}}e^{\\lambda\\,(1-\\lambda)^{j-1}h_{t}^{T}h_{I_{w%\n}(j)}}\\,.$$",
+		"word_idx": 26624,
+		"sentence_idx": 313,
+		"label": "none"
+	}]
+}

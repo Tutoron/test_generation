@@ -1,0 +1,29 @@
+{
+	"doc_name": "Social_GAN",
+	"symbol_expr": "W_{ee}",
+	"sentences": [{
+		"type": "text",
+		"expr": "$\\displaystyle=\\phi(x_{i}^{t},y_{i}^{t};W_{ee})$",
+		"word_idx": 15710,
+		"sentence_idx": 191,
+		"label": "none"
+	}, {
+		"type": "math",
+		"expr": "$$\\displaystyle=\\phi(x_{i}^{t},y_{i}^{t};W_{ee})$$",
+		"word_idx": 15758,
+		"sentence_idx": 192,
+		"label": "none"
+	}, {
+		"type": "text",
+		"expr": "where  $\\phi(\\cdot)$  is an embedding function with ReLU non-linearity,  $W_{ee}$  is the embedding weight",
+		"word_idx": 15964,
+		"sentence_idx": 197,
+		"label": "definition"
+	}, {
+		"type": "math",
+		"expr": "$$W_{ee}$$",
+		"word_idx": 16157,
+		"sentence_idx": 200,
+		"label": "none"
+	}]
+}

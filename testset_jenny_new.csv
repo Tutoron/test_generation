@@ -1,0 +1,11 @@
+"In particular consider the conditional log-probability of a summary given the input, s(\xvec, \yvec) = \log p(\yvec | \xvec; \theta).",0.222222222,0,0,3,0.1,7,0,1
+"With this scoring function in mind, our main focus will be on modelling the local conditional distribution: p(\yvec_{i+1} | \xvec, \context; \theta).",0.222222222,0,0,3,0.2,6,1,0
+"The distribution of interest, p(\yvec_{i+1} | \xvec, \context ; \theta), is a conditional language model based on the input sentence \xvec.",0.333333333,0,0,2,0.3,5,0,0
+"The parameters are \theta = (\Evec, \Uvec , \Vvec, \Wvec) where \Evec \in \reals^{D \times V}$ is a word embedding matrix, \Uvec \in \reals^{(C D) \times H} , \Vvec \in \reals^{V \times H}, \Wvec \in \reals^{V \times H} are weight matrices.",0.370370367,0,0,1,0.5,3,2,2
+"Once we have defined the local conditional model, p(\yvec_{i+1}| \xvec, \context ; \theta), we can estimate the parameters to minimize the negative log-likelihood of a set of summaries.",0.444443333,0,1,0,0.6,2,1,0
+"\Require{Parameters \theta, beam size K, input \xvec}",0.444444444,1,1,0,0.8,1,0,0
+"We do this by modifying our scoring function to directly estimate the probability of a summary using a log-linear model, as is standard in machine translation: p(\yvec | \xvec;\theta, \alpha ) &\propto& \exp( \mathbf{\alpha}^\top \sum_{i = 0}^{N-1} f(\yvec_{i+1}, \xvec, \context) ).",0.444444444,1,1,0,0.9,2,0,0
+"After training the main neural model, we fix \theta and tune the \alpha parameters.",0.444444444,1,1,0,1,3,1,0
+where |B| is a size of the mini-batch and \alpha is a hyper parameter representing required estimation accuracy.,0.6,0,0,1,0.6,2,2,0
+"The leading term of the number of multiply-add operations in it is 2 N |B|, where N and |B| are the number of parameters and the local batch size, respectively.",0.714285714,1,1,0,1,1,2,0
+"By the weak law of large numbers, when |B| > 1, the left hand side of Eq.~\ref{sufficient_condition} with g = \nabla f_B(x) can be estimated as follows:",0.6,0,0,1,0.8,1,1,1
